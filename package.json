@@ -1,0 +1,16 @@
+{
+  "name": "Platzi-media-player",
+  "version": "1.0.0",
+  "description": "Proyecto para practicar JS a un nivel profesional",
+  "license": "MIT",
+  "author": "Luis Eduardo Sotoj <luissotoj@gmail.com>",
+  "keywords": [
+    "platzi"
+  ],
+  "scripts": {
+    "start": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
