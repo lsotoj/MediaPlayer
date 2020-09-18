@@ -27,6 +27,14 @@ MediaPlayer.prototype.tooglePlay = function() {
     }
 };
 
+MediaPlayer.prototype.muteUnmute = function() {
+    if(this.media.muted) {
+        this.media.muted = false;
+    } else {
+        this.media.muted = true;
+    }
+}
+
 MediaPlayer.prototype.mute = function() {
     this.media.muted = true;
 }
