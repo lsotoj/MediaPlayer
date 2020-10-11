@@ -9,17 +9,32 @@
     <h1>This hace referencia al pedazo de codigo que en ese momento se esté ejecutando</h1>
 </body>
 <script>
-    const person = {
-        name: 'Gabriel',
-        saludar: function() {
-            console.log(`Hola soy: ${this.name}`);
-        },
-    };
+    // const person = {
+    //     name: 'Gabriel',
+    //     saludar: function() {
+    //         console.log(`Hola soy: ${this.name}`);
+    //     },
+    // };
 
-    person.saludar();
+    // person.saludar();
 
-    const accion = person.saludar;
-    accion();
+    // const accion = person.saludar;
+    // accion();
+
+    function Person(name) {
+        this.name = name;
+    }
+
+    Person.prototype.saludar = function() {
+        "strict mode";
+        name = 'Juan';
+        console.log(`Hola me llamo: ${this.name}`);
+    }
+
+    const carla = new Person('Carla');
+
+    carla.saludar();
+
 
 </script>
 </html>
